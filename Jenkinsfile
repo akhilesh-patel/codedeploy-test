@@ -4,7 +4,8 @@ pipeline {
         stage('Build') {
             steps {
               
-            sh  sudo '/install_dependencies.sh'
+             sh  './install_dependencies.sh'
+               
 
              
             }
