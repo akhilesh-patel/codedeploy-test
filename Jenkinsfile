@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('test') {
+        stage('teskt') {
             steps {
              sh  './install_dependencies.sh'
                
