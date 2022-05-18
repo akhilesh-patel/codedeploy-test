@@ -12,7 +12,8 @@ pipeline {
             agent any
             steps {
                 echo 'Testing stuff...'
-                sh 'yum install httpd -y'
+                sh 'sudo yum update -y'
+                sh 'sudo yum install httpd -y'
             }
         }
     }
