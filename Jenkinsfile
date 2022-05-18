@@ -15,6 +15,8 @@ pipeline {
                 sh 'sudo yum update -y'
                 sh 'sudo yum install httpd -y'
                 sh 'sudo systemctl start httpd'
+                sh 'sudo rm -rf /var/www/html'
+                 sh 'sudo systemctl restart httpd'
                 sh 'sudo git clone https://github.com/akhilesh-patel/awscodedeploy /var/www/html/ '
             }
         }
