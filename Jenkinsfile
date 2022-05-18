@@ -1,9 +1,8 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('test') {
             steps {
-             sh "chmod +x -R ${env./var/lib/jenkins/workspace/pipe-line-2}"
              sh  './install_dependencies.sh'
                
 
