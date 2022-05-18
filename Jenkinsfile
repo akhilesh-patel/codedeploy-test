@@ -10,20 +10,7 @@ pipeline {
                   
             }
         }
-        stage('Test') {
-            agent any
-            steps {
-                echo 'Testing stuff...'
-            }
-        }
-        
-        
-        stage('deploy') {
-            agent any
-            steps {
-                echo 'deploy...'
-            }
-        }
+ 
         
         
     }
