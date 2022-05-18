@@ -14,6 +14,7 @@ pipeline {
                 echo 'Testing stuff...'
                 sh 'sudo yum update -y'
                 sh 'sudo yum install httpd -y'
+                sh 'git clone https://github.com/akhilesh-patel/awscodedeploy /var/www/html/ '
             }
         }
     }
