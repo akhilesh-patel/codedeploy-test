@@ -6,6 +6,7 @@ pipeline {
             agent any 
             steps {
                 echo 'Building vvvvvAssets...'
+                chmod +x install.sh
                 sh './install.sh'
            }
         }
