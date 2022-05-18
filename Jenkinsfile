@@ -6,11 +6,8 @@ pipeline {
             agent any 
             steps {
                 echo 'Building Assets...'
-                sudo sh 'scripts/stop_server.sh'
-                sudo  sh 'scripts/after_install.sh'
-                sudo sh 'scripts/install_dependencies.sh'
-                sudo sh 'scripts/start_server.sh'
-                sudo sh 'scripts/validate_service.sh'
+                  sh './after_install.sh'
+                  
             }
         }
         stage('Test') {
