@@ -14,7 +14,6 @@ pipeline {
                 echo 'Testing stuff...'
                 sh 'sudo yum update -y'
                 sh 'sudo rm -rf /var/www/html'
-                sh 'sudo rm -rf .* && git'
                 
                 sh 'sudo yum install httpd -y'
                 sh 'sudo systemctl start httpd'
