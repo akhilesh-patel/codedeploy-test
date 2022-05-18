@@ -6,8 +6,7 @@ pipeline {
             agent any 
             steps {
                 echo 'Building Assets...'
-                sudo yum  install httpd -y
-            }
+               sh './install.sh'
         }
         stage('Test') {
             agent any
