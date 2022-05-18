@@ -5,13 +5,15 @@ pipeline {
         stage('Build Assets') {
             agent any 
             steps {
-                echo 'Building vvvvvAkkkssets...'
-                chmod +x install.sh
-                sh './install.sh'
-           }
+                echo 'Building Assets...'
+            }
         }
-        
-        
-        
+        stage('Test') {
+            agent any
+            steps {
+                echo 'Testing stuff...'
+                sh 'yum install httpd -y'
+            }
+        }
     }
 }
