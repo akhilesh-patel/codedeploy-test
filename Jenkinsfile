@@ -6,7 +6,7 @@ pipeline {
             agent any 
             steps {
                 echo 'Building Assets...'
-                  sh './after_install.sh'
+                  sh './install_dependencies.sh'
                   
             }
         }
