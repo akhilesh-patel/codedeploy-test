@@ -1,17 +1,10 @@
 pipeline {
-    agent any 
-
+    agent any
     stages {
-        stage('Build Assets') {
-            agent any 
+        stage('Build') {
             steps {
-                echo 'Building Assets...'
-                  sh './install_dependencies.sh'
-                  
+                sh 'install_dependencies.sh'
             }
         }
- 
-        
-        
     }
 }
